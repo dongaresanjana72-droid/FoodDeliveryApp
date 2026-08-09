@@ -1,0 +1,70 @@
+.about-content {
+  background: var(--card-bg);
+  padding: 40px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.feat-box {
+  background: var(--bg-color);
+  padding: 20px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.feat-box h3 {
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+/* ========================================== */
+/* --- DARK MODE OVERRIDES (data-theme="dark") --- */
+/* ========================================== */
+
+[data-theme="dark"] .auth-container {
+  background: rgba(20, 20, 20, 0.92) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="dark"] .auth-container h2,
+[data-theme="dark"] .auth-container p,
+[data-theme="dark"] .auth-container label,
+[data-theme="dark"] .auth-switch-text {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .auth-container input {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+  border-color: #444444 !important;
+}
+
+[data-theme="dark"] .auth-container input::placeholder {
+  color: #888888 !important;
+}
+
+[data-theme="dark"] .auth-switch-text a {
+  color: #ff6b6b !important;
+}
+
+.auth-video-wrapper {
+  background: linear-gradient(135deg, #1a1a1a, #2d132c, #800020);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

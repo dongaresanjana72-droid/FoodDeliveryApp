@@ -1,0 +1,19 @@
+.not-found-card {
+  max-width: 500px;
+  margin: 40px auto;
+  background: var(--card-bg);
+  padding: 60px 40px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+}
+
+.not-found-card h1 {
+  font-size: 5rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.not-found-card h2 {
+  margin-bottom: 12px;
+}

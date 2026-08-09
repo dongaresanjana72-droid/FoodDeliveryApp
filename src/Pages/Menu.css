@@ -1,0 +1,159 @@
+.page-container {
+  padding: 2rem 1rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--text-color, #fff);
+}
+
+.menu-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Filters Sidebar Styling */
+.filters-sidebar {
+  background: var(--card-bg, #1a1a1a);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 90px;
+}
+
+.filters-sidebar h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  color: #ff4757;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.filter-group {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filter-group label {
+  font-size: 0.9rem;
+  color: #a4b0be;
+  font-weight: 500;
+}
+
+.filter-group input[type="text"],
+.filter-group select {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #2f3542;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  width: 100%;
+}
+
+.filter-group input[type="text"]:focus,
+.filter-group select:focus {
+  border-color: #ff4757;
+}
+
+.filter-group input[type="range"] {
+  width: 100%;
+  accent-color: #ff4757;
+  cursor: pointer;
+}
+
+.filter-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+}
+
+.filter-checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: #f1f2f6;
+  cursor: pointer;
+}
+
+.filter-checkboxes input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #ff4757;
+  cursor: pointer;
+}
+
+/* Menu Content & Grid */
+.menu-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.results-count {
+  font-size: 0.95rem;
+  color: #a4b0be;
+  margin-bottom: 1.25rem;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.no-results {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--card-bg, #1a1a1a);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.no-results h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+/* Filter ke saare checkboxes ke text aur labels ko dark aur saaf banana */
+.filters-container label,
+.filter-section label,
+.filters-sidebar label,
+.filter-group label,
+.filters-container span,
+.filter-section span {
+  color: #212529 !important;
+  font-weight: 500;
+}
+
+/* Agar koi inactive/disabled checkbox text ho toh use bhi readable banana */
+.filters-container input[type="checkbox"] ~ span,
+.filter-options label {
+  color: #333333 !important;
+}
+/* Responsive Design for smaller screens */
+@media (max-width: 900px) {
+  .menu-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .filters-sidebar {
+    position: relative;
+    top: 0;
+  }
+}

@@ -1,0 +1,35 @@
+.success-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  padding: 50px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+}
+
+.success-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.success-card h1 {
+  margin-bottom: 12px;
+}
+
+.order-id {
+  color: var(--primary);
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.success-desc {
+  color: var(--text-muted);
+  margin-bottom: 30px;
+}
+
+.success-btns {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}

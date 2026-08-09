@@ -1,0 +1,34 @@
+/* Form ke labels aur text jo light/dark mode mein properly dikhenge */
+.auth-container label,
+.auth-container p,
+.auth-container span,
+.auth-form label,
+.form-label,
+.auth-title,
+.auth-subtitle {
+  color: #333333; /* Light mode ke liye dark color */
+}
+
+/* Agar website dark mode (data-theme="dark" ya dark class) mein hai, toh text white ho jayega */
+[data-theme="dark"] .auth-container label,
+[data-theme="dark"] .auth-container p,
+[data-theme="dark"] .auth-container span,
+[data-theme="dark"] .auth-form label,
+[data-theme="dark"] .form-label,
+[data-theme="dark"] .auth-title,
+[data-theme="dark"] .auth-subtitle,
+.dark .auth-container label,
+.dark .auth-container p,
+.dark .auth-container span {
+  color: #f8f9fa !important; /* Dark mode ke liye bright white/light color */
+}
+
+/* Input boxes ke andar ka text aur placeholder styling */
+.auth-container input {
+  color: inherit;
+}
+
+.auth-container input::placeholder {
+  color: #888888;
+  opacity: 1;
+}
